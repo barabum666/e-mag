@@ -2327,6 +2327,29 @@ img {
     margin-bottom: 10px;
     font-size: 12px;
   }
+
+  .popup-content {
+    max-height: 80%;
+    padding: 10px;
+  }
+
+  .authorization-oneclick {
+    margin-bottom: 0;
+  }
+
+  .oneclick-link {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .registration-btn {
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }
 @supports (-webkit-appearance:none){
 .enter-button-icon-auth{background-image:url("../img/icons/authorization.svg")}
@@ -2368,6 +2391,14 @@ img {
 }
 
  @media (max-width: 767px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 500px){
 
 @supports (-webkit-appearance:none){
 
