@@ -1183,11 +1183,10 @@ img {
   height: 25px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: transparent;
   background-size: contain;
 }
 
-.invite-others-item-link .vk {
+.vk {
   background-image: url("../img/icons/vk.svg");
 }
 
