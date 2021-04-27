@@ -9,6 +9,12 @@ burger.addEventListener("click", function () {
 });
 
 if (window.innerWidth <= 992) {
+	document.addEventListener("DOMContentLoaded", function (event) {
+		window.onresize = function () {
+			location.reload();
+		};
+	});
+
 	let parent = document.querySelectorAll(".product-item");
 	let child = document.querySelectorAll(".add-to-cart-btn");
 
@@ -57,6 +63,53 @@ new Swiper(".baner-init", {
 	},
 	// Change speed
 	speed: 300,
+});
+
+new Swiper(".product-page-slider", {
+	pagination: {
+		el: ".product-page-slider-pagination",
+		clickable: true
+	},
+	watchOverflow: true,
+	loop: true,
+	speed: 300,
+	// Minislider
+	thumbs: {
+		swiper: {
+			el: ".product-minislider",
+			slidesPerView: 10,
+			spaceBetween: 10,
+		}
+	},
+});
+
+new Swiper(".product-page-suitable-slider", {
+	// Arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev"
+	},
+	// Bullets
+	pagination: {
+		el: ".swiper-button-pagination",
+		clickable: true
+	},
+	simulateTouch: false,
+	slidesPerView: 1,
+	watchOverflow: true,
+	// Change speed
+	speed: 300,
+	breakpoints: {
+		320: {
+			slidesPerView: 2,
+		},
+		767: {
+			slidesPerView: 3,
+		},
+		992: {
+			slidesPerView: 4,
+		},
+	},
 });
 
 /*---------popup-product-description-link---*/
@@ -108,6 +161,42 @@ if (subCheck.length > 0) {
 }
 
 window.onload = isChecked;
+
+/*--------Main-nav-submenu---------*/
+
+const menuLinks = document.querySelectorAll(".main-nav__list-item");
+const submenu = document.querySelector(".main-nav-submenu");
+
+for (i = 0; i < menuLinks.length; i++) {
+	const menuLink = menuLinks[i];
+	menuLink.onmouseover = function () {
+		submenu.classList.add("active");
+	};
+	menuLink.onmouseout = function () {
+		submenu.classList.remove("active");
+	};
+}
+
+/*-----------Catalog-filters-------*/
+
+const filterLinks = document.querySelectorAll(".catalog-categories-title");
+
+if (filterLinks.length > 0) {
+	for (i = 0; i < filterLinks.length; i++) {
+		const filterLink = filterLinks[i];
+		filterLink.addEventListener('click', function () {
+			const activeFilterList = document.querySelector(".catalog-categories-list.active");
+			const filterName = filterLink.getAttribute('id').replace('to', '');
+			const filterList = document.getElementById(filterName);
+
+			if (activeFilterList && activeFilterList !== filterList) {
+				activeFilterList.classList.remove("active");
+			}
+
+			filterList.classList.toggle("active");
+		});
+	}
+}
 
 /*-----------Popup-----------------*/
 
@@ -166,8 +255,7 @@ function popupOpen(currentPopup) {
 			},
 			watchOverflow: true,
 			loop: true,
-			centeredSlides: true,
-			observeParents: true,
+			slidesPerView: 1,
 		});
 
 	}
