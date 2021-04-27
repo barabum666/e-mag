@@ -9,11 +9,11 @@ burger.addEventListener("click", function () {
 });
 
 if (window.innerWidth <= 992) {
-	document.addEventListener("DOMContentLoaded", function (event) {
+	/*document.addEventListener("DOMContentLoaded", function (event) {
 		window.onresize = function () {
 			location.reload();
 		};
-	});
+	});*/
 
 	let parent = document.querySelectorAll(".product-item");
 	let child = document.querySelectorAll(".add-to-cart-btn");
