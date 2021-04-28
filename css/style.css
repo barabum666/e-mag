@@ -2458,6 +2458,22 @@ img {
     margin-bottom: 50px;
   }
 
+  .inst {
+    background-image: url("../img/icons/inst.svg");
+  }
+
+  .vk {
+    background-image: url("../img/icons/vk.svg");
+  }
+
+  .fb {
+    background-image: url("../img/icons/fb.svg");
+  }
+
+  .twit {
+    background-image: url("../img/icons/twit.svg");
+  }
+
   .main-nav-submenu {
     display: none;
   }
@@ -2608,6 +2624,22 @@ img {
 
   .btn {
     min-width: 130px;
+  }
+
+  .inst {
+    background-image: url("../img/icons/inst.svg");
+  }
+
+  .vk {
+    background-image: url("../img/icons/vk.svg");
+  }
+
+  .fb {
+    background-image: url("../img/icons/fb.svg");
+  }
+
+  .twit {
+    background-image: url("../img/icons/twit.svg");
   }
 
   .burger {
@@ -3124,7 +3156,10 @@ img {
  @media (max-width: 992px){
 
 @supports (-webkit-appearance:none){
-
+.inst{background-image:url("../img/icons/inst.svg")}
+.vk{background-image:url("../img/icons/vk.svg")}
+.fb{background-image:url("../img/icons/fb.svg")}
+.twit{background-image:url("../img/icons/twit.svg")}
 }
 
 }
@@ -3132,7 +3167,10 @@ img {
  @media (max-width: 767px){
 
 @supports (-webkit-appearance:none){
-
+.inst{background-image:url("../img/icons/inst.svg")}
+.vk{background-image:url("../img/icons/vk.svg")}
+.fb{background-image:url("../img/icons/fb.svg")}
+.twit{background-image:url("../img/icons/twit.svg")}
 }
 
 }
