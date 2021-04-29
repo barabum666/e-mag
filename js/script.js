@@ -23,7 +23,7 @@ if (window.innerWidth <= 992) {
 	}
 }
 
-if (window.innerWidth <= 767) {
+if (window.innerWidth <= 992) {
 	document.querySelector(".main-nav").prepend(document.querySelector(".header-top__content-left"));
 	document.querySelector(".main-nav-icons").prepend(document.querySelector(".header-content__enter-buttons"));
 	document.querySelector(".header-content__enter-buttons").append(document.querySelector(".tel-icon"));
