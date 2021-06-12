@@ -9,12 +9,6 @@ burger.addEventListener("click", function () {
 });
 
 if (window.innerWidth <= 992) {
-	/*document.addEventListener("DOMContentLoaded", function (event) {
-		window.onresize = function () {
-			location.reload();
-		};
-	});*/
-
 	let parent = document.querySelectorAll(".product-item");
 	let child = document.querySelectorAll(".add-to-cart-btn");
 
@@ -197,6 +191,12 @@ if (filterLinks.length > 0) {
 		});
 	}
 }
+
+document.querySelector("body").addEventListener("click", function (e) {
+	if (!e.target.closest(".catalog-categories")) {
+		document.querySelector(".catalog-categories-list.active").classList.remove("active");
+	}
+});
 
 /*-----------Popup-----------------*/
 
