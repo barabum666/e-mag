@@ -169,7 +169,7 @@ img {
   padding: 10px 40px;
   text-align: center;
   font-size: 16px;
-  background-color: #ffd12c;
+  background-color: #dea576;
   border-radius: 40px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -177,7 +177,23 @@ img {
 }
 
 .btn:hover {
-  background-color: #ffea2c;
+  background-color: #deae86;
+}
+
+.btn1 {
+  background-color: #f4bffb;
+}
+
+.btn1:hover {
+  background-color: #f5cbfb;
+}
+
+.btn2 {
+  background-color: #fbf0bb;
+}
+
+.btn2:hover {
+  background-color: #f9e895;
 }
 
 .btn-bold {
@@ -673,7 +689,7 @@ img {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 30px;
-  color: #ffd12c;
+  color: #fbf0bb;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -682,7 +698,7 @@ img {
 }
 
 .swiper-pagination-bullet {
-  background: #ffd12c;
+  background: #fbf0bb;
   opacity: 0.5;
 }
 
