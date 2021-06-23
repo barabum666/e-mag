@@ -169,7 +169,7 @@ img {
   padding: 10px 40px;
   text-align: center;
   font-size: 16px;
-  background-color: #dea576;
+  background-color: #deae86;
   border-radius: 40px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -177,15 +177,15 @@ img {
 }
 
 .btn:hover {
-  background-color: #deae86;
+  background-color: #dea576;
 }
 
 .btn1 {
-  background-color: #f4bffb;
+  background-color: #f5cbfb;
 }
 
 .btn1:hover {
-  background-color: #f5cbfb;
+  background-color: #f4bffb;
 }
 
 .btn2 {
