@@ -1080,6 +1080,7 @@ img {
 }
 
 .social-army-img {
+  min-height: 100%;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
